@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Rozha+One&display=swap');
+
+.background {
+    background-image: url("../../images/landing.jpg");
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    height: 100vh;
+}
+
+.titleDropPosition {
+    position:absolute;
+    top: 31px;
+    right: 49px;
+}
+
+.titleZonePosition {
+    position:absolute;
+    top: 83px;
+    right: 29px;    
+}
+
+.blackAndWhite {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.titleFont {
+    font-family: "Rozha One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    padding: 2px 14px;
+    letter-spacing: 0.15em;
+    margin: 0 auto;
+}
+
+.productFont {
+    color: #000000;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 40px;
+    letter-spacing: 0.15em;
+}
+
+.productPosition{
+    position:absolute;
+    top: 278px;
+    right: 193px;  
+}
+
+.timerFont {
+    font-family: "Rozha One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 40px;
+    padding: 17px 14px;
+    margin: 0 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 320px) {
+
+    /* .titleDropPosition {
+        top: 32px;
+        left: 209px;
+    }
+    
+    .titleZonePosition {
+        top: 83px;
+        left: 29px;    
+    }
+
+    .productPosition {
+        top: 83px;
+        left: 234px;
+    } */
+
+}
