@@ -6,7 +6,30 @@
   <!-- Fonts -->
   <!-- imported the font in style.css __ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Rozha+One&display=swap" rel="stylesheet"> -->
   <script>
-    
+    const countdownDateTime = new Date().getTime() + (13 * 24 * 60 * 60 * 1000) + (8 * 60 * 60 * 1000) + (12 * 60 * 1000) + (5 * 1000);
+
+    const x = setInterval(function() {
+      const timeNow = new Date().getTime();
+      const timeLeft = countdownDateTime - timeNow;
+      
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24)).toString();
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString();
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)).toString();
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000).toString();
+
+      console.log(hours.charAt(0));
+      console.log(hours.charAt(1));
+
+      document.getElementById("days1").innerHTML = days.charAt(1) != "" ? days.charAt(0) : 0;
+      document.getElementById("days2").innerHTML = days.charAt(1) == "" ? days.charAt(0) : days.charAt(1);
+      document.getElementById("hours1").innerHTML = hours.charAt(1) != "" ? hours.charAt(0) : 0;
+      document.getElementById("hours2").innerHTML = hours.charAt(1) == "" ? hours.charAt(0) : hours.charAt(1);
+      document.getElementById("mins1").innerHTML = minutes.charAt(1) != "" ? minutes.charAt(0) : 0;
+      document.getElementById("mins2").innerHTML = minutes.charAt(1) == "" ? minutes.charAt(0) : minutes.charAt(1);
+      document.getElementById("secs1").innerHTML = seconds.charAt(1) != "" ? seconds.charAt(0) : 0;
+      document.getElementById("secs2").innerHTML = seconds.charAt(1) == "" ? seconds.charAt(0) : seconds.charAt(1);
+
+    }, 1000);
   </script>
 </head>
 
@@ -24,8 +47,8 @@
 
           <div class="timerContainer">
             <div class="timerBox">
-              <h1 class="blackAndWhite">1</h1> <!-- change to dynamic timer-->
-              <h1 class="blackAndWhite">3</h1>             
+              <h1 class="blackAndWhite" id="days1"></h1> <!-- change to dynamic timer-->
+              <h1 class="blackAndWhite" id="days2">3</h1>             
             </div>
             <div class="timerMetrics">
               <span class="timerFont">DAYS</span>
@@ -34,8 +57,8 @@
         
           <div class="timerContainer">
             <div class="timerBox">
-              <h1 class="blackAndWhite">0</h1> 
-              <h1 class="blackAndWhite">8</h1>             
+              <h1 class="blackAndWhite" id="hours1"></h1> 
+              <h1 class="blackAndWhite" id="hours2"></h1>             
             </div>
             <div class="timerMetrics">
               <span class="timerFont">HOURS</span>
@@ -44,8 +67,8 @@
 
           <div class="timerContainer">
             <div class="timerBox">
-              <h1 class="blackAndWhite">1</h1> 
-              <h1 class="blackAndWhite">2</h1>             
+              <h1 class="blackAndWhite" id="mins1"></h1> 
+              <h1 class="blackAndWhite" id="mins2"></h1>             
             </div>
             <div class="timerMetrics">
               <span class="timerFont">MINS</span>
@@ -54,8 +77,8 @@
 
           <div class="timerContainer">
             <div class="timerBox">
-              <h1 class="blackAndWhite">0</h1> 
-              <h1 class="blackAndWhite">5</h1>             
+              <h1 class="blackAndWhite" id="secs1"></h1> 
+              <h1 class="blackAndWhite" id="secs2"></h1>             
             </div>
             <div class="timerMetrics">
               <span class="timerFont">SECS</span>
