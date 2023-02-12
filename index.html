@@ -17,9 +17,6 @@
       const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)).toString();
       const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000).toString();
 
-      console.log(hours.charAt(0));
-      console.log(hours.charAt(1));
-
       document.getElementById("days1").innerHTML = days.charAt(1) != "" ? days.charAt(0) : 0;
       document.getElementById("days2").innerHTML = days.charAt(1) == "" ? days.charAt(0) : days.charAt(1);
       document.getElementById("hours1").innerHTML = hours.charAt(1) != "" ? hours.charAt(0) : 0;
@@ -35,7 +32,7 @@
 
 <body>
   <div class="background">
-    <div> 
+    <div class="titleContainer"> 
       <h2 class="blackAndWhite titleDropPosition">DROP</h2>
       <h2 class="blackAndWhite titleZonePosition">ZONE</h2>
     </div>
@@ -43,54 +40,52 @@
     <div class="productCountdown">
       <span class="productFont">LEEZY BOOST 103</span>
 
-        <div class="countdownContainer"> <!--days timer-->
-
-          <div class="timerContainer">
-            <div class="timerBox">
-              <h1 class="blackAndWhite" id="days1"></h1> <!-- change to dynamic timer-->
-              <h1 class="blackAndWhite" id="days2">3</h1>             
-            </div>
-            <div class="timerMetrics">
-              <span class="timerFont">DAYS</span>
-            </div>
+      <div class="countdownContainer"> <!--days timer-->
+        <div class="timerContainer">
+          <div class="timerBox">
+            <h1 class="blackAndWhite" id="days1"></h1> <!-- change to dynamic timer-->
+            <h1 class="blackAndWhite" id="days2"></h1>             
           </div>
+          <div class="timerMetrics">
+            <span class="timerFont">DAYS</span>
+          </div>
+        </div>
         
-          <div class="timerContainer">
-            <div class="timerBox">
-              <h1 class="blackAndWhite" id="hours1"></h1> 
-              <h1 class="blackAndWhite" id="hours2"></h1>             
-            </div>
-            <div class="timerMetrics">
-              <span class="timerFont">HOURS</span>
-            </div>
+        <div class="timerContainer">
+          <div class="timerBox">
+            <h1 class="blackAndWhite" id="hours1"></h1> 
+            <h1 class="blackAndWhite" id="hours2"></h1>             
           </div>
+          <div class="timerMetrics">
+            <span class="timerFont">HOURS</span>
+          </div>
+        </div>
 
-          <div class="timerContainer">
-            <div class="timerBox">
-              <h1 class="blackAndWhite" id="mins1"></h1> 
-              <h1 class="blackAndWhite" id="mins2"></h1>             
-            </div>
-            <div class="timerMetrics">
-              <span class="timerFont">MINS</span>
-            </div>          
+        <div class="timerContainer">
+          <div class="timerBox">
+            <h1 class="blackAndWhite" id="mins1"></h1> 
+            <h1 class="blackAndWhite" id="mins2"></h1>             
           </div>
+          <div class="timerMetrics">
+            <span class="timerFont">MINS</span>
+          </div>          
+        </div>
 
-          <div class="timerContainer">
-            <div class="timerBox">
-              <h1 class="blackAndWhite" id="secs1"></h1> 
-              <h1 class="blackAndWhite" id="secs2"></h1>             
-            </div>
-            <div class="timerMetrics">
-              <span class="timerFont">SECS</span>
-            </div>
+        <div class="timerContainer">
+          <div class="timerBox">
+            <h1 class="blackAndWhite" id="secs1"></h1> 
+            <h1 class="blackAndWhite" id="secs2"></h1>             
           </div>
+          <div class="timerMetrics">
+            <span class="timerFont">SECS</span>
+          </div>
+        </div>
       </div>
 
       <div class="messageContainer">
         <span class="messageFont">UNTIL DROP</span>
       </div>
     </div>
-
   </div>
 </body>
 </html>

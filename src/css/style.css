@@ -30,7 +30,6 @@ h2 {
     min-height: 100%;
     min-width: 1024px;
     width: 100%;
-    height: auto;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,16 +37,20 @@ h2 {
     height: 100vh;
 }
 
+.titleContainer {
+    display: flex;
+}
+
 .titleDropPosition {
     position: fixed;
-    top: 3%;
-    right: 3.4%;
+    top: 2rem;
+    right: 3rem;
 }
 
 .titleZonePosition {
     position: fixed;
-    top: 9%;
-    right: 2%;    
+    top: 5.1rem;
+    right: 1.81rem;    
 }
 
 .blackAndWhite {
@@ -66,13 +69,13 @@ h2 {
 }
 
 .productCountdown {
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    top: 45%; 
-    left: 50%;
     margin: 0;
     position: fixed;
+    top: 40%; 
+    left: 45%;
 }
 
 .countdownContainer {
@@ -125,33 +128,19 @@ h2 {
 
     /* timer */
     h1 {    
-        font-family: 'Rozha One';
-        font-style: normal;
-        font-weight: 400;
         font-size: 24px;
         line-height: 40px;
         margin: 0 3px;  
         width: 32px;
         height: 40px;
-        text-align: center;
     }
 
     .productFont {
         font-size: 24px;
     }
 
-    .titleDropPosition {
-        top: 1.5%;
-        left: 52%;
-    }
-    
-    .titleZonePosition {
-        top: 9.5%;
-        left: 59%;    
-    }
-
     .productCountdown {
-        top: 70%; 
+        top: 65%; 
         left: 0;
         width: 100vw;
     }
