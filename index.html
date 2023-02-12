@@ -5,36 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Fonts -->
   <!-- imported the font in style.css __ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Rozha+One&display=swap" rel="stylesheet"> -->
+  <script>
+    
+  </script>
 </head>
+
 <body>
   <div class="background">
-
     <div> 
-      <span class="blackAndWhite titleFont titleDropPosition">DROP</span>
-      <span class="blackAndWhite titleFont titleZonePosition">ZONE</span>
-    </div>
-
-    <div>
-      <span class="productFont productPosition">LEEZY BOOST 103</span>
+      <h2 class="blackAndWhite titleDropPosition">DROP</h2>
+      <h2 class="blackAndWhite titleZonePosition">ZONE</h2>
     </div>
 
     <div class="productCountdown">
-      <div> <!--days timer-->
-        <div>
-          <span class="timerFont blackAndWhite">1</span> <!-- change to dynamic timer-->
-          <span class="timerFont blackAndWhite">3</span> 
-        </div>
-      </div>
-      <div> <!--hours timer-->
+      <span class="productFont">LEEZY BOOST 103</span>
 
-      </div>
-      <div> <!--min timer-->
+        <div class="countdownContainer"> <!--days timer-->
 
-      </div>
-      <div> <!--sec timer-->
+          <div class="timerContainer">
+            <div class="timerBox">
+              <h1 class="blackAndWhite">1</h1> <!-- change to dynamic timer-->
+              <h1 class="blackAndWhite">3</h1>             
+            </div>
+            <div class="timerMetrics">
+              <span class="timerFont">DAYS</span>
+            </div>
+          </div>
+        
+          <div class="timerContainer">
+            <div class="timerBox">
+              <h1 class="blackAndWhite">0</h1> 
+              <h1 class="blackAndWhite">8</h1>             
+            </div>
+            <div class="timerMetrics">
+              <span class="timerFont">HOURS</span>
+            </div>
+          </div>
 
+          <div class="timerContainer">
+            <div class="timerBox">
+              <h1 class="blackAndWhite">1</h1> 
+              <h1 class="blackAndWhite">2</h1>             
+            </div>
+            <div class="timerMetrics">
+              <span class="timerFont">MINS</span>
+            </div>          
+          </div>
+
+          <div class="timerContainer">
+            <div class="timerBox">
+              <h1 class="blackAndWhite">0</h1> 
+              <h1 class="blackAndWhite">5</h1>             
+            </div>
+            <div class="timerMetrics">
+              <span class="timerFont">SECS</span>
+            </div>
+          </div>
       </div>
 
+      <div class="messageContainer">
+        <span class="messageFont">UNTIL DROP</span>
+      </div>
     </div>
 
   </div>
